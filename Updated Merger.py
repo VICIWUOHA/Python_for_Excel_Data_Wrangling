@@ -33,3 +33,5 @@ product_orders.set_index('Order_Date', inplace=True)
 with pd.ExcelWriter('Merged Sales Data.xlsx') as writer:
     city_orders.to_excel(writer, sheet_name='City Orders')
     product_orders.to_excel(writer, sheet_name='Product Orders')
+
+# This works perfectly fine
